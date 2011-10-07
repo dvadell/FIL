@@ -1,5 +1,6 @@
 #!/usr/bin/perl -w -T
 use strict;
+no strict 'subs'; # So we can say "daemonize" without parenthesis.
 use warnings;
 
 # daemonize the program. To debug, comment this line.
