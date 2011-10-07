@@ -1,10 +1,9 @@
 #!/usr/bin/perl -w -T
 use strict;
-no strict 'subs'; # So we can say "daemonize" without parenthesis.
 use warnings;
 
 # daemonize the program. To debug, comment this line.
-daemonize;
+daemonize();
 
 # http://www.webreference.com/perl/tutorial/9/3.html
 sub daemonize {
@@ -19,7 +18,7 @@ sub daemonize {
         close(PIDFILE);
         exit;
     }
-    setsid                    or die "Can't start a new session: $!";
+    setsid()                  or die "Can't start a new session: $!";
     umask 0;
 }
 
