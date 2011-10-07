@@ -1,6 +1,7 @@
 #!/usr/bin/perl -w -T
 use strict;
 use warnings;
+#sobrevivire?
 
 # daemonize the program. To debug, comment this line.
 daemonize();
